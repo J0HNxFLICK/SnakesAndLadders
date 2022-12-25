@@ -33,6 +33,12 @@
                         Console.WriteLine("SSSSS! " + playerOneName + " has landed on a snake !");
                         dice = random.Next(1, 7); // UC2 The player rolls a die to get a number between 1 to 6.
                         playerPosition -= dice;
+
+                        if (playerPosition < 0) // UC4 If player position moves below 0 player starts from 0th position.
+                        {
+                            playerPosition = 0;
+                        }
+
                         Console.WriteLine("{0} is currently at {1}\n", playerOneName, playerPosition);
                         break;
 
