@@ -9,7 +9,8 @@
             const int maxTileNumber = 100;
             int dice = 0;
             int oldPosition = 0;
-            int playerPosition = 0; // UC1 Snake and ladder game played with single player at start position 0
+            int playerPosition = 0; // UC1 Snake and ladder game played with single player at start position 0.
+            int dieRollTracker = 0;
             
 
             Console.WriteLine("Enter player name : ");
@@ -36,7 +37,9 @@
                             playerPosition = oldPosition;
                         }
 
-                        Console.WriteLine("{0} moved from {1} to {2}\n" , playerOneName , oldPosition, playerPosition);
+                        Console.WriteLine("{0} moved from {1} to {2}" , playerOneName , oldPosition, playerPosition);// UC6 Report the number of times die rolled to win game and display current position
+                        dieRollTracker++;
+                        Console.WriteLine("Die roll count : {0}\n", dieRollTracker); 
                         break;
 
                     case 2:
@@ -50,7 +53,9 @@
                             playerPosition = 0;
                         }
 
-                        Console.WriteLine("{0} went back from {1} to {2}\n", playerOneName, oldPosition , playerPosition);
+                        Console.WriteLine("{0} went back from {1} to {2}\n", playerOneName, oldPosition , playerPosition);// UC6 Report the number of times die rolled to win game and display current position
+                        dieRollTracker++;
+                        Console.WriteLine("Die roll count : {0}\n", dieRollTracker);
                         break;
 
                 }
