@@ -123,15 +123,3 @@
         
     }
 }
-
-
-
-
-
-
-
-
-//Console.WriteLine("{0} went back from {1} to {2}\n", playerOneName, oldPlayer0nePosition, playerOnePosition);// UC6 Report the number of times die rolled to win game and display current position
-//dieRollTrackerOne++;
-//Console.WriteLine("Die roll count : {0}\n", dieRollTrackerOne);
-//break;
